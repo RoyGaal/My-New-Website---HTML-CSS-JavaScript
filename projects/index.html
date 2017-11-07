@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Roy Gal - Software Developer </title>
+  <link rel="stylesheet" type="text/css" href="myWeb.css">
+</style>
+
+</head>
+
+<body>
+    <div style="background-color: #e6e6e6">
+      <!-- <img class="center" src="images/top-img.png" width="650" height="250" alt="top" align="middle"/> -->
+      <div >
+        <img class="center" src="images/top-img.png" width="650" height="250" alt="top" align="middle">
+        <img class="center" src="images/top2.png" width="650" height="250" alt="top" align="middle">
+        <img class="center" src="images/top3.png" width="650" height="250" alt="top" align="middle">
+      </div>
+
+      <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("center");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+      <h1> Roy Gal </h1>
+      <h2> Software Developer </h2>
+      </br></br></br></br></br></br>
+      </br></br></br></br></br>
+
+      <header>
+        <nav>
+          <ul>
+            <a href="/about/">About</a>
+            <a href="/projects/">Projects</a>
+            <a href="/resume/">Resume</a>
+          </ul>
+         </nav>
+       </header>
+     <hr>
+     </div>
+
+  <div>
+    <section id="projects">
+      <h3> Projects </h3>
+      </br>
+
+      <div class="div1">
+      <li>Paint</li>
+      <p2>Paint is a project I have created in Java that allows the user to draw shapes
+        and type a text onto a JPanel in different colors and sizes.</p2>
+      </br>
+      <img class="img2" src="images/paint.png" width="550" height="350" alt="Paint"/>
+      </br>
+      </br>
+      <video class="video1" width="550" height="350" controls>
+         <source  src="videos/Paint.mp4" type="video/mp4"/>
+      </video>
+      </br>
+      </br>
+      </br>
+      <hr/ class="hr2">
+
+      <li>Space Ship</li>
+      <p2>Space Ship is a video game created for the final project in a Video Game Programming course.
+         It was built in Java using custom graphics, sound, collision detection, and more.</p2>
+       </br>
+       </br>
+       <img class="img2" src="images/spaceship.png" width="550" height="350" alt="Paint"/>
+       </br>
+       </br>
+       <video class="video1" width="550" height="350" controls>
+          <source  src="videos/spaceShip.mp4" type="video/mp4"/>
+       </video>
+       </br>
+       </br>
+       </br>
+       <hr/ class="hr2">
+
+      <li>Card Matching Game</li>
+      <p2>Card Matching Game is an iOS app that was built in Objective C.</p2>
+      </br></br></br></br></br>
+      <video width="550" height="350" controls>
+         <source  src="videos/CardsGame.mp4" type="video/mp4"/>
+      </video>
+      </br>
+    </br>
+    </br>
+    <hr/ class="hr2">
+
+    <li>Chat</li>
+    <p2>Chat is a project which allows multiple clients to connect to a multi-threaded TCP and UDP application.
+      This project provides the option for the client to send a public message to connected clients or a private
+      message to a specific client.
+    </p2>
+    </br></br></br>
+    <img class="img2" src="images/Chat.png" width="550" height="350" alt="Paint"/>
+    </br></br></br>
+    <hr/ class="hr2">
+
+
+
+   </div>
+ </div>
+    </section>
+  </div>
+
+
+</div>
+</body>
+
+</html>

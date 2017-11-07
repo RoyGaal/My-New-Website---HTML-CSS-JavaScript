@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Roy Gal - Software Developer </title>
+  <link rel="stylesheet" type="text/css" href="myWeb.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<style>
+#flip {
+    text-align: center;
+    font-size: 32px;
+    font-family: arial black;
+}
+#text{
+  text-align: center;
+}
+#text {
+    padding: 40px;
+    display: none;
+}
+</style>
+
+</head>
+
+<body>
+  <div>
+    <!-- <div style="background-color: #e6e6e6"> -->
+      <!-- <img class="center" src="images/top-img.png" width="650" height="250" alt="top" align="middle"/> -->
+      <div >
+        <img class="center" src="images/top-img.png" width="650" height="250" alt="top" align="middle">
+        <img class="center" src="images/top2.png" width="650" height="250" alt="top" align="middle">
+        <img class="center" src="images/top3.png" width="650" height="250" alt="top" align="middle">
+      </div>
+
+      <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("center");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+
+      $(document).ready(function(){
+          $("#flip").click(function(){
+              $("#text").slideToggle("slow");
+          });
+      });
+      </script>
+
+      <h1> Roy Gal </h1>
+      <h2> Software Developer </h2>
+      </br></br></br></br></br></br>
+      </br></br></br></br></br>
+
+      <header>
+        <nav>
+          <ul>
+            <a href="/about/">About</a>
+            <a href="/projects/">Projects</a>
+            <a href="/resume/">Resume</a>
+          </ul>
+         </nav>
+       </header>
+     <hr>
+
+     <div class="div1" id="flip">Contact</div>
+     <div id="text">
+       <p>
+         <a class="a10" href="mailto:roygaal@gmail.com">roygaal@gmail.com</a>
+         <p13>&#10070</p13>
+         <!-- <p14>(917) 744 - 7727</p14> -->
+         <a href="tel:1-917-744-7727"><p14>1 (917) 744-7727</p14></a>
+         <p10>&#10070</p10>
+         <p8>New York, NY</p8>
+       </p>
+     </div>
+
+     </div>
+
+     <div>
+       <section id="about">
+         <h3>
+           About
+           </br>
+
+         <p>
+           <img src="images/me.png" width="200" height="230" alt="me" align="center"/>
+           <p1>A Computer Science graduate looking for a Software Engineer entry level position within New York area.
+               Highly responsible and reliable hard working, who is driven and can meet strict deadlines, is seeking to
+               apply and improve his technical, analytical and interpersonal skills.</p1>
+          </div>
+        </p>
+      </h3>
+       </section>
+     </div>
+  </div>
+
+</body>
+
+</html>
